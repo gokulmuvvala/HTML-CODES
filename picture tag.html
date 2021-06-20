@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture element </title>
+</head>
+<body>
+    <h1 style="font-family: Verdana; color: pink;"> My goodies </h1> 
+    <picture>
+        <source media="(min-width: 400px)" srcset="m1.jpg"> <!-- This is for mobile ratio -->
+        <source media="(min-width: 600px)"  srcset="dog.gif"> <!-- This is for tablet or mobile  ratio -->
+        <img src = "my pc.jpg" style="width:auto;"> <!-- This is a default -->
+    </picture>
+    
+</body>
+</html>
