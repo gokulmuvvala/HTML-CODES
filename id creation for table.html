@@ -1,0 +1,88 @@
+<!--HTML TABLES-->
+<!-- HTML Table with collapse borders-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Adding borders,padding,text alignments,border spacing to the table -->
+    <!-- id creation here id name is t41 -->
+    <style>
+        table,th,td{
+            border: 2px solid blue ; 
+            border-collapse: collapse;
+        }
+        th,td{
+            padding:20px;
+        }
+        td{
+            text-align:center;
+        }
+        table{
+            border-spacing: 5px;
+        }
+        
+        #t41
+        {
+          width :50px;
+          background-color: tomato;
+                }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class marks in the table with collapse border  </title>
+</head>
+<body>
+    <h1 style= "font-family:Impact;font-size: 550%;">Mark sheet of 2018 Batch </h1>
+    <table style="width: 50%">
+         <!--Adding a caption -->
+         <caption> Table 1 </caption>
+    <tr style="font-family:Cambria;font-size:x-large;">
+        <th >Name</th>
+        <!--Adding more columns span with the help of colspan tag-->
+        <th colspan="2">marks</th>
+
+    </tr>
+    <tr style="font-family:Roboto;font-size:large;">
+        <td> Ramana </td>
+        <td> 52(old marks ) </td>
+        <td>59 (updated marks)</td>
+        
+    </tr>
+</tr>
+<tr style="font-family:Roboto;font-size:large;">
+    <td> Bhanu </td>
+    <td>  65(old marks)</td>
+    <td>72(updated marks) </td>
+
+</tr>
+    </table>
+
+<!--New table with rowspan-->
+
+<h1 style= "font-family:Impact;font-size: 550%;">Mark sheet of 2019 Batch</h1>
+<!--id t41 is used for this table --> 
+    <table id= "t41" style="width: 50%"> <!-- id created by the user -->
+        <!--Adding a caption -->
+        <caption> Table 2 </caption>
+    <tr style="font-family:Cambria;font-size:x-large;">
+        <th >Name</th>
+        <!--Adding more rows span with the help of rowspan tag-->
+        <th rowspan="2">marks</th>
+
+    </tr>
+    <tr style="font-family:Roboto;font-size:large;">
+        <td> Raki </td>
+        <td> 92(old marks ) </td>
+        <td>90 (updated marks)</td>
+        
+    </tr>
+</tr>
+<tr style="font-family:Roboto;font-size:large;">
+    <td> prakash </td>
+    <td>  41(old marks)</td>
+    <td> 82(updated marks) </td>
+
+</tr>
+    </table>
+</body>
+</html>
