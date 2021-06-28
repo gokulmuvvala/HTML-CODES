@@ -1,26 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author"   content="Gokul">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gokul" />
     <title>Html forms example-1</title>
     <style>
-        h1{
-            text-align:center;
-             font-size:xx-large;
-             color: brown;
-             font-family: Helvetica;
-        }
+      h1 {
+        text-align: center;
+        font-size: xx-large;
+        color: brown;
+        font-family: Helvetica;
+      }
     </style>
-</head>
-<body>
-    <h1> Welcome to  <span style="color:blue;font-size:xx-large;"> New india </span>bank</h1>
-    
-    <form>
-    <p></p>
+  </head>
+
+  <body>
+    <h1>
+      Welcome to
+      <span style="color: blue; font-size: xx-large"> New india </span>bank
+    </h1>
+    <hr />
+    <form action="gokul.php">
+      <p style="font-size: large; color: black">Enter your details</p>
+      <div>
+        First Name: <input type="text" name="fName" /> Last Name:
+        <input type="text" name="lName" />
+      </div>
+      <br />
+      <div>Age: <input type="text" name="myAge" /></div>
+      <br />
+      <div>
+        Gender: <input type="radio" name="myGender" /> Male <input type="radio" name="myGender" /> Female  
+        <input type="radio" name="myGender" />Other
+        
+      </div>
+      <br />
+      <div>DOB: <input type="date" name="myDOB" /></div>
+      <br />
+      <div>Email:<input type="email" name="myEmail" /></div>
+      <br />
+      <div>Age 18 <sup>+</sup> <input type="checkbox" name="myCheckbox" /></div>
+      <br />
+      <div>
+          Write about your self </br/> <textarea name="myText" cols="40" rows="20"></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Submit Now" />
+        <!--This will reset the entire form-->
+        <input type="reset" value="Reset Now" />
+      </div>
+      <br />
     </form>
-    
-</body>
+  </body>
 </html>
